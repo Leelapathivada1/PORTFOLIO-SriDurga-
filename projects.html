@@ -8,57 +8,49 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <style>
-   body {
-       font-family: Arial, sans-serif;
-       margin: 0;
-       padding: 20px;
-       background-color: #f4f4f4;
-   }
+        
+        .project-card {
+            width: 300px;
+            margin: 20px;
+            padding: 15px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            
+        }
 
-   .container {
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: space-around;
-   }
+        .project-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
 
-   .project-card {
-       width: 300px;
-       margin: 20px;
-       padding: 15px;
-       background-color: white;
-       border: 1px solid #ddd;
-       border-radius: 8px;
-       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-       text-align: center;
-   }
+        .project-card h3 {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            color: #333;
+        }
 
-   .project-card img {
-       max-width: 100%;
-       height: auto;
-       border-radius: 8px;
-   }
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
-   .project-card h3 {
-       margin-top: 15px;
-       font-size: 1.2rem;
-       color: #333;
-   }
-
-   .project-card a {
-       display: inline-block;
-       margin-top: 10px;
-       padding: 10px 15px;
-       background-color: #007bff;
-       color: white;
-       text-decoration: none;
-       border-radius: 5px;
-       transition: background-color 0.3s ease;
-   }
-
-   .project-card a:hover {
-       background-color: #0056b3;
-   }
-</style>
+        .project-card a:hover {
+            background-color: #0056b3;
+        }
+        .footer{
+         align-items: ;
+        }
+    </style>
   
 
   <!-- Favicons -->
@@ -144,6 +136,7 @@
     <section id="portfolio" class="portfolio section">
 
       <div class="container">
+         <div class="project-cards-container" style="display: flex; justify-content: center; flex-wrap: wrap;">
 
          <div class="project-card">
             <img src="assets/img/project1.jpeg" class="img-fluid" alt="">
@@ -156,7 +149,7 @@
             <h3>Project 2</h3>
             <a href="https://www.figma.com/design/xMt9HbcirWfld9xyq2nvHp/Edubot-file?t=spLK7AMSgKSxRBt0-0" target="_blank" rel="noopener">View Project</a><br>
         </div>
-        
+         </div>
         
 
       </div>
