@@ -8,46 +8,144 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <style>
-    /* Remove project card styles */
-    .project-card {
-      display: none;
-    }
+        
+        .project-card {
+            width: 300px;
+            margin: 20px;
+            padding: 15px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            
+        }
 
-    /* Center heading */
-    .case-study-heading {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 700;
-      margin-top: 40px;
-    }
+        .project-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
 
-    .case-study-content {
-      text-align: center;
-      margin: 20px auto;
-      max-width: 600px;
-    }
+        .project-card h3 {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            color: #333;
+        }
 
-    .student-projects {
-      display: flex;
-      justify-content: center;
-      margin-top: 40px;
-    }
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: rgb(43, 100, 43);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
-    .student-projects a {
-      margin: 10px;
-      padding: 10px 20px;
-      border: 2px solid rgb(43, 100, 43);
-      text-decoration: none;
-      color: rgb(43, 100, 43);
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
+        .project-card a:hover {
+            background-color: rgb(43, 100, 43);
+        }
 
-    .student-projects a:hover {
-      background-color: rgb(43, 100, 43);
-      color: white;
-    }
-  </style>
+        .case-study {
+         background-color: white;
+         padding: 50px 0;
+         text-align: center;
+     }
+
+     .case-study a{
+      margin-top: 10px;
+            padding: 10px 15px;
+            background-color: rgb(43, 100, 43);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+
+     }
+     
+      /* Case Study Section Styles */
+      .case-study {
+        background-color: white;
+        padding: 60px 20px;
+        text-align: center;
+      }
+  
+      .case-study h2 {
+        font-size: 2.5rem;
+        color: green;
+        margin-bottom: 25px;
+        position: relative;
+      }
+  
+      .case-study h2::after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 4px;
+        background-color: green;
+        margin: 10px auto 0;
+      }
+  
+      .case-study p {
+        font-size: 1.2rem;
+        color: #333;
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+  
+      .case-study .highlight {
+        color: green;
+        font-weight: bold;
+      }
+  
+      .case-study .project-details {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+  
+      .case-study .project-details div {
+        background-color: #f8f8f8;
+        padding: 20px;
+        margin: 10px;
+        width: 300px;
+        border-radius: 10px;
+        text-align: left;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+  
+      .case-study .project-details h3 {
+        font-size: 1.5rem;
+        color: green;
+        margin-bottom: 15px;
+      }
+  
+      .case-study .project-details p {
+        font-size: 1rem;
+        color: #555;
+      }
+  
+      .case-study a {
+        background-color: green;
+        color: white;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+  
+      .case-study a:hover {
+        background-color: white;
+        color: green;
+        border: 2px solid green;
+      }
+    
+  
+        
+    </style>
   
 
   <!-- Favicons -->
@@ -110,16 +208,28 @@
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Case-Study</h1>
-              <p class="mb-0">Here’s an in-depth reflection of the key projects I contributed to, outlining the full process and the successful outcomes:
-
-                These case study reflects my hands-on approach to tackling complex design challenges while maintaining a clear focus on the end-user experience. It offers a detailed overview of the stages involved, from initial concept and research through to design execution and final delivery. The study underscores how I utilized user feedback, iterative prototyping, and a combination of creative and technical skills to bring the project to life..</p>
+        <section id="case-study-edubot" class="case-study">
+          <h2>Edubot UI/UX Case Study</h2>
+          <p>As the <span class="highlight">UI/UX Developer</span> for Edubot, I contributed to designing an innovative learning platform that provides personalized education for every learner. With the vision to revolutionize traditional education methods, the platform integrates cutting-edge AI to deliver tailored learning experiences that engage and inspire students globally.</p>
+      
+          <div class="project-details">
+            <div>
+              <h3>Project Scope</h3>
+              <p>The project involved designing a dynamic and intuitive user interface for Edubot, ensuring an engaging user experience. The goal was to make learning seamless and interactive, catering to diverse learners through AI-powered personalized content.</p>
+            </div>
+            <div>
+              <h3>Design Process</h3>
+              <p>I followed a user-centered design approach. Initial stages included user research and persona development, followed by wireframing, prototyping, and iterative testing to ensure the platform meets both educational and technical goals.</p>
+            </div>
+            <div>
+              <h3>Challenges & Solutions</h3>
+              <p>The key challenge was integrating complex AI functionalities into a simple and user-friendly interface. By focusing on clear visual design, intuitive navigation, and user testing, we successfully blended advanced AI capabilities with a clean, approachable design.</p>
             </div>
           </div>
-        </div>
+          
+          
+      </section>
+      
       </div>
       <nav class="breadcrumbs">
         <div class="container">
@@ -134,10 +244,21 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
-      <div class="container student-projects">
-        <a href="project1.html">Project 1: Sirian Overseas</a>
-        <a href="project2.html">Project 2: Edubot Software And Services </a>
-        <a href="project3.html">Project 3: Yellow Studio</a>
+      <div class="container">
+         <div class="project-cards-container" style="display: flex; justify-content: center; flex-wrap: wrap;">
+
+         
+        
+        <div class="project-card">
+            <img src="assets/img/project2.jpeg" class="img-fluid" alt="">
+            <h3>Project 2</h3>
+            <a href="https://www.figma.com/design/xMt9HbcirWfld9xyq2nvHp/Edubot-file?t=spLK7AMSgKSxRBt0-0" target="_blank" rel="noopener">View Full Project</a><br>
+        </div>
+         </div>
+        
+
+      </div>
+
       </div>
 
     </section><!-- /Portfolio Section -->
